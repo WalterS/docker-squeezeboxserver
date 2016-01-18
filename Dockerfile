@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:6
 
 MAINTAINER Walter S.
 
@@ -7,6 +7,7 @@ RUN yum -y upgrade
 RUN yum -y install http://downloads.slimdevices.com/LogitechMediaServer_v7.8.0/logitechmediaserver-7.8.0-1.noarch.rpm
 RUN ln -s /usr/lib/perl5/vendor_perl/Slim /usr/lib64/perl5/
 COPY ./bin/run_server /usr/local/bin/
+COPY ./etc/squeezeboxserver /etc/sysconfig/
 
 VOLUME ['/mnt/state']
 EXPOSE 3483 9000 9090

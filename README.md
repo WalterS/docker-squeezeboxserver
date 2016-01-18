@@ -1,4 +1,4 @@
-Docker image for Logitech Media Server/Squeezeboxserver on CentOS 6  
+Docker file for Logitech Media Server/Squeezeboxserver on CentOS 6  
 Run:
 ```
 docker run -d \

@@ -1,4 +1,4 @@
-Docker image for Logitech Media Server/Squeezeboxserver on CentOS 6
+Docker image for Logitech Media Server/Squeezeboxserver on CentOS 6  
 Run:
 ```
 docker run -d \
@@ -9,3 +9,6 @@ docker run -d \
 	-v <local_music_dir>:/mnt/music \
 	walters/squeezeboxserver
 ```
+
+You can find logs and preferences in \<local_state_dir\>. To prevent clashing with user IDs on the host server, Squeezeboxserver runs with UID 8888 and GID 8888.
+

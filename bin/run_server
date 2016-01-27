@@ -16,6 +16,7 @@ fi
 stopping () {
 echo "Exiting..."
 service squeezeboxserver stop
+exit
 # pkill -f /usr/libexec/squeezeboxserver
 }
 
